@@ -12,36 +12,33 @@ const About = () => {
   const AboutImage = useRef(null);
 
   useGSAP(() => {
-    gsap.from(AboutTitle.current, {
+    const AboutTl = gsap.timeline({
       scrollTrigger: {
         trigger: AboutSection.current,
         start: "top 50%",
         end: "bottom 50%",
       },
+    });
+
+    AboutTl.from(AboutTitle.current, {
       clipPath: "inset(0% 100% 0% 0%)",
-      duration: 5,
+      duration: 1.4,
       ease: "expo",
-    });
-    gsap.from(AboutPara.current, {
-      scrollTrigger: {
-        trigger: AboutSection.current,
-        start: "top 50%",
-        end: "bottom 50%",
-      },
-      clipPath: "inset(100% 0% 100% 0%)",
-      duration: 3,
-      ease: "expo",
-    });
-    gsap.from(AboutImage.current, {
-      scrollTrigger: {
-        trigger: AboutSection.current,
-        start: "top 50%",
-        end: "bottom 50%",
-      },
-      clipPath: "inset(0% 50% 0% 50%)",
-      duration: 3,
-      ease: "expo",
-    });
+    })
+      .from(AboutPara.current, {
+        clipPath: "inset(100% 0% 100% 0%)",
+        duration: 1.2,
+        ease: "expo",
+      })
+      .from(AboutImage.current, {
+        clipPath: "inset(0% 50% 0% 50%)",
+        duration: 1,
+        ease: "expo",
+      });
+
+    return () => {
+      AboutTl.kill();
+    };
   });
 
   return (
