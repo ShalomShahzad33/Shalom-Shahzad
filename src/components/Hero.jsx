@@ -42,6 +42,11 @@ const Hero = () => {
         duration: 0.5,
         ease: "none",
       });
+
+    return () => {
+      HeroTitle.revert();
+      HeroTl.kill();
+    };
   });
 
   return (
