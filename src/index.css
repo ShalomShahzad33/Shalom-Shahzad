@@ -18,3 +18,37 @@ h6 {
 .hero-logos {
   @apply size-14 absolute;
 }
+
+.float-animation-top {
+  animation-name: float-top;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.float-animation-bottom {
+  animation-name: float-bottom;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes float-top {
+  from {
+    top: 5rem;
+  }
+  to {
+    top: 7rem;
+  }
+}
+
+@keyframes float-bottom {
+  from {
+    bottom: 5rem;
+  }
+  to {
+    bottom: 7rem;
+  }
+}

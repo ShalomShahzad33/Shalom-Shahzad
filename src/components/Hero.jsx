@@ -21,25 +21,25 @@ const Hero = () => {
 
     HeroTl.from(HeroTitle.words, {
       y: 150,
-      duration: 1,
+      duration: 0.75,
       stagger: 0.1,
       ease: "expo.out",
     })
       .from(HeroPara.current, {
         y: 50,
         opacity: 0,
-        duration: 1,
+        duration: 0.5,
         ease: "expo.out",
       })
       .from(Buttons.current, {
         y: 50,
         opacity: 0,
-        duration: 1,
+        duration: 0.5,
         ease: "power2.inOut",
       })
       .from(LogoSection.current, {
         opacity: 0,
-        duration: 1,
+        duration: 0.5,
         ease: "none",
       });
   });
@@ -79,22 +79,22 @@ const Hero = () => {
         <img
           src={ReactLogo}
           alt="react-logo"
-          className="hero-logos top-20 bottom-0 left-15 right-0 drop-shadow-blue-700 drop-shadow-xl"
+          className="hero-logos float-animation-top top-20 bottom-0 left-15 right-0 drop-shadow-blue-700 drop-shadow-xl"
         />
         <img
           src={TailwindLogo}
           alt="tailwind-logo"
-          className="hero-logos left-15 bottom-20 drop-shadow-blue-600 drop-shadow-xl"
+          className="hero-logos float-animation-bottom left-15 bottom-20 drop-shadow-blue-600 drop-shadow-xl"
         />
         <img
           src={GSAPLogo}
           alt="gsap-logo"
-          className="hero-logos right-15 top-20 drop-shadow-green-700 drop-shadow-xl"
+          className="hero-logos float-animation-top right-15 top-20 drop-shadow-green-700 drop-shadow-xl"
         />
         <img
           src={JavascriptLogo}
           alt="javascript-logo"
-          className="hero-logos right-15 bottom-20 drop-shadow-yellow-400 drop-shadow-xl"
+          className="hero-logos float-animation-bottom right-15 bottom-20 drop-shadow-yellow-400 drop-shadow-xl"
         />
       </div>
     </section>
