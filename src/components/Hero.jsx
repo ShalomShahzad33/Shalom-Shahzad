@@ -1,7 +1,7 @@
-import ReactLogo from "../assets/react-logo.png";
-import TailwindLogo from "../assets/tailwindcss-logo.png";
-import GSAPLogo from "../assets/gsap-logo.png";
-import JavascriptLogo from "../assets/javascript-logo.png";
+import ReactLogo from "../assets/images/react-logo.png";
+import TailwindLogo from "../assets/images/tailwindcss-logo.png";
+import GSAPLogo from "../assets/images/gsap-logo.png";
+import JavascriptLogo from "../assets/images/javascript-logo.png";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
