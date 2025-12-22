@@ -26,7 +26,7 @@ const TechStack = () => {
 
   return (
     <section
-      className="w-dvw bg-slate-950 text-white p-6"
+      className="w-vw bg-slate-950 text-white p-6"
       ref={TechStackSection}
     >
       <article className="p-2 md:h-auto rounded bg-slate-800">

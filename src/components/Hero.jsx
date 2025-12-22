@@ -50,7 +50,7 @@ const Hero = () => {
   });
 
   return (
-    <section className="text-white flex flex-col text-center gap-5 justify-center items-center h-dvh w-dvw bg-linear-to-tr from-slate-950 via-indigo-950 to-blue-950 md:gap-9">
+    <section className="text-white flex flex-col text-center gap-5 justify-center items-center h-dvh w-vw bg-linear-to-tr from-slate-950 via-indigo-950 to-blue-950 md:gap-9">
       <h1
         className="text-3xl sm:text-5xl md:text-7xl relative overflow-hidden"
         ref={Title}
