@@ -70,7 +70,7 @@ const Hero = () => {
           aria-label="See my Work"
           className="bg-white text-blue-700 px-4 py-2 border hover:cursor-pointer hover:bg-transparent hover:text-white hover:border transition-all text-center focus:bg-transparent focus:text-white"
         >
-          See my Work &rarr;
+          <a href="#projects-section">See my Work &rarr;</a>
         </button>
         <button
           aria-label="Contact Me"
