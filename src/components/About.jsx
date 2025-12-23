@@ -21,13 +21,15 @@ const About = () => {
     });
 
     AboutTl.from(AboutTitle.current, {
-      clipPath: "inset(0% 100% 0% 0%)",
-      duration: 1.4,
+      y: 30,
+      opacity: 0,
+      duration: 1,
       ease: "expo",
     })
       .from(AboutPara.current, {
-        clipPath: "inset(100% 0% 100% 0%)",
-        duration: 1.2,
+        y: 30,
+        opacity: 0,
+        duration: 1,
         ease: "expo",
       })
       .from(AboutImage.current, {
