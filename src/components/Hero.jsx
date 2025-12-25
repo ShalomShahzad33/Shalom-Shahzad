@@ -61,7 +61,7 @@ const Hero = () => {
         </span>
       </h1>
       <p className="md:text-2xl" ref={HeroPara}>
-        I am a React Frontend Developer working with{" "}
+        I build fast, animated React interfaces using{" "}
         <span className="text-blue-500">Tailwind</span> and{" "}
         <span className="text-[#0ae448]">GSAP</span>
       </p>

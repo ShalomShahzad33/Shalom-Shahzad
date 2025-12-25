@@ -5,7 +5,7 @@ const myWork = [
   {
     title: "NOXSTEP",
     description:
-      "NOXSTEP is a frontend only mock animated products landing page designed to increase sales and conversion. It offers professional styling with Tailwind CSS and premium looking and feeling animations using GSAP.",
+      "NOXSTEP is a frontend-focused animated products landing page designed to increase sales and conversion. It offers professional styling with Tailwind CSS and premium looking and feeling animations using GSAP.",
     image: NOXSTEP,
     alt: "noxstep-img",
     tech: "React, Tailwind, GSAP",
@@ -14,7 +14,7 @@ const myWork = [
   {
     title: "Save & Serve Humanity",
     description:
-      "Save and Serve Humanity is a real organization working in Pakistan providing health facilities free of cost to underserved and deserving people",
+      "Save and Serve Humanity is a real organization working in Pakistan providing providing free healthcare services to underserved communities across Pakistan",
     image: SSH,
     alt: "save-and-serve-humanity-img",
     tech: "Wordpress, Elementor",

@@ -57,13 +57,12 @@ const About = () => {
           ref={AboutPara}
         >
           I'm a frontend developer specializing in React, Tailwind CSS, and
-          GSAP, focused on building fast, responsive, and visually engaging user
-          interfaces. I enjoy turning complex ideas into clean, interactive
-          experiences with smooth animations and thoughtful design. Alongside
-          modern React workflows, I also have hands-on experience with WordPress
-          and Elementor, allowing me to deliver flexible, content-driven
-          websites when needed. I care about performance, usability, and writing
-          maintainable code that scales.
+          GSAP, focused on building fast, responsive, and visually engaging
+          interfaces. I turn complex ideas into clean, interactive experiences
+          with smooth animations and thoughtful design. I also have hands-on
+          experience with WordPress and Elementor for flexible, content-driven
+          websites. I care deeply about performance, usability, and maintainable
+          code.
         </p>
       </div>
       <div className="image h-1/2 w-full overflow-hidden sm:h-full sm:w-1/2">
