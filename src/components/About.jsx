@@ -49,10 +49,13 @@ const About = () => {
       ref={AboutSection}
     >
       <div className="text w-full h-content bg-slate-800/70 p-2 rounded space-y-2 md:space-y-5 sm:h-full sm:w-1/2">
-        <h1 className="text-4xl md:text-5xl" ref={AboutTitle}>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl" ref={AboutTitle}>
           ABOUT ME
         </h1>
-        <p className="font-extralight text-sm md:text-md" ref={AboutPara}>
+        <p
+          className="font-extralight text-sm md:text-md lg:text-xl"
+          ref={AboutPara}
+        >
           I'm a frontend developer specializing in React, Tailwind CSS, and
           GSAP, focused on building fast, responsive, and visually engaging user
           interfaces. I enjoy turning complex ideas into clean, interactive

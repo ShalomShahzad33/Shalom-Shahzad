@@ -52,11 +52,11 @@ const Hero = () => {
   return (
     <section className="text-white flex flex-col text-center gap-5 justify-center items-center h-dvh w-vw bg-linear-to-tr from-slate-950 via-indigo-950 to-blue-950 md:gap-9">
       <h1
-        className="text-3xl sm:text-5xl md:text-7xl relative overflow-hidden"
+        className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl relative overflow-hidden"
         ref={Title}
       >
         Hi, I am&nbsp;
-        <span className="font-bold text-blue-700 mix-blend-color-dodge block sm:inline text-6xl md:text-7xl">
+        <span className="font-bold text-blue-700 mix-blend-color-dodge block sm:inline text-6xl md:text-7xl lg:text-8xl">
           Shalom Shahzad
         </span>
       </h1>
@@ -76,7 +76,7 @@ const Hero = () => {
           aria-label="Contact Me"
           className="px-4 py-2 border hover:cursor-pointer hover:bg-white hover:text-blue-700 text-center transition-all focus:bg-white focus:text-blue-700"
         >
-          Contact Me
+          <a href="#contact-section">Contact Me &rarr;</a>
         </button>
       </div>
 

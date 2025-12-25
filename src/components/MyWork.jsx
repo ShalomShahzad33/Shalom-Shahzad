@@ -22,8 +22,8 @@ const MyWork = () => {
   });
 
   return (
-    <section className="bg-slate-950 text-white p-6 h-auto overflow-hidden">
-      <h2 className="text-4xl md:text-5xl mb-4">My Work</h2>
+    <section className="bg-slate-950 text-white h-auto overflow-hidden">
+      <h2 className="text-4xl md:text-5xl mb-4 ml-6">My Work</h2>
       <div className="h-dvh flex items-stretch gap-2" id="projects-section">
         {myWork.map(({ image, alt, title, description, tech, link }) => {
           return (
