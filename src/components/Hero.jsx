@@ -76,7 +76,7 @@ const Hero = () => {
           aria-label="Contact Me"
           className="px-4 py-2 border hover:cursor-pointer hover:bg-white hover:text-blue-700 text-center transition-all focus:bg-white focus:text-blue-700"
         >
-          <a href="#contact-section">Contact Me &rarr;</a>
+          <a href="#footer">Hire Me &rarr;</a>
         </button>
       </div>
 

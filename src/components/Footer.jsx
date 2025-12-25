@@ -1,6 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="bg-slate-950 text-white p-4 flex flex-col justify-center items-center gap-4 md:gap-6 md:p-8 md:flex-row md:justify-around md:text-xl">
+    <footer
+      id="footer"
+      className="bg-slate-950 text-white p-4 flex flex-col justify-center items-center gap-4 md:gap-6 md:p-8 md:flex-row md:justify-around md:text-xl"
+    >
       <p>Let's work together.</p>
       <p>React • Tailwind • GSAP • WordPress</p>
       <p className="space-x-7 text-blue-100 underline">
