@@ -1,5 +1,6 @@
 import NOXSTEP from "../assets/images/NOXSTEP.png";
 import SSH from "../assets/images/SSH.png";
+import POKELIB from "../assets/images/Pokelib.png";
 
 const myWork = [
   {
@@ -10,6 +11,15 @@ const myWork = [
     alt: "noxstep-img",
     tech: "React, Tailwind, GSAP",
     link: "https://noxstep.vercel.app/",
+  },
+  {
+    title: "Pokelib",
+    description:
+      "Pokelib fetches basic stats of any pokemon typed using an API and displays them. It handles errors and loading state as well",
+    image: POKELIB,
+    alt: "pokelib-img",
+    tech: "React, Tailwind",
+    link: "https://pokelib-one.vercel.app/",
   },
   {
     title: "Save & Serve Humanity",
