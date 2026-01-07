@@ -29,7 +29,7 @@ const TechStack = () => {
       className="w-vw bg-slate-950 text-white p-6"
       ref={TechStackSection}
     >
-      <article className="p-2 md:h-auto rounded bg-slate-800">
+      <article className="p-2 md:h-auto rounded">
         <h2 className="text-4xl md:text-5xl mb-4">My Tech Stack</h2>
         <div
           className="tech-cards items-stretch flex justify-center gap-2 flex-col md:flex-row flex-wrap"

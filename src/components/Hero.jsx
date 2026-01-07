@@ -60,7 +60,7 @@ const Hero = () => {
           Shalom Shahzad
         </span>
       </h1>
-      <p className="md:text-2xl" ref={HeroPara}>
+      <p className="md:text-2xl px-6" ref={HeroPara}>
         I build fast, animated React interfaces using{" "}
         <span className="text-blue-500">Tailwind</span> and{" "}
         <span className="text-[#0ae448]">GSAP</span>

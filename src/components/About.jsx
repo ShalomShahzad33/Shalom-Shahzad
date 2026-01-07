@@ -48,7 +48,7 @@ const About = () => {
       className="w-full h-[80dvh] bg-slate-950 text-white p-6 flex flex-col justify-center items-center gap-6 sm:flex-row"
       ref={AboutSection}
     >
-      <div className="text w-full h-content bg-slate-800/70 p-2 rounded space-y-2 md:space-y-5 sm:h-full sm:w-1/2">
+      <div className="text w-full h-content p-2 rounded space-y-2 md:space-y-5 sm:h-full sm:w-1/2">
         <h1 className="text-4xl md:text-5xl lg:text-6xl" ref={AboutTitle}>
           ABOUT ME
         </h1>
