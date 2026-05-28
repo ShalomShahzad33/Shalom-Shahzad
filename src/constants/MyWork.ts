@@ -1,35 +1,36 @@
-import NOXSTEP from "../assets/images/NOXSTEP.png";
-import SSH from "../assets/images/SSH.png";
-import POKELIB from "../assets/images/Pokelib.png";
+import DEVPaste from "../assets/images/devpaste.png";
+import BearBasket from "../assets/images/bearbasket.png";
+import PDFManipulator from "../assets/images/pdfmanipulator.png";
+
 import type { WorkItem } from "../types/content";
 
 const myWork: WorkItem[] = [
   {
-    title: "NOXSTEP",
+    title: "DevPaste",
     description:
-      "NOXSTEP is a frontend-focused animated products landing page designed to increase sales and conversion. It offers professional styling with Tailwind CSS and premium looking and feeling animations using GSAP.",
-    image: NOXSTEP,
-    alt: "noxstep-img",
-    tech: "React, Tailwind, GSAP",
-    link: "https://noxstep.vercel.app/",
+      "A modern paste-sharing platform with GitHub authentication, syntax highlighting, secure sharing, and a polished developer-focused experience powered by Supabase.",
+    image: DEVPaste,
+    alt: "devpaste-project",
+    tech: "React, TypeScript, Supabase, Tailwind",
+    link: "https://shalomdevpaste.vercel.app/",
   },
   {
-    title: "Pokelib",
+    title: "BearBasket",
     description:
-      "Pokelib fetches basic stats of any pokemon typed using an API and displays them. It handles errors and loading state as well",
-    image: POKELIB,
-    alt: "pokelib-img",
-    tech: "React, Tailwind",
-    link: "https://pokelib-one.vercel.app/",
+      "A sleek ecommerce frontend experience featuring dynamic cart management, smooth UI interactions, and modern state handling using Zustand.",
+    image: BearBasket,
+    alt: "bearbucket-project",
+    tech: "React, Zustand, Tailwind, TypeScript",
+    link: "https://bear-basket.vercel.app/",
   },
   {
-    title: "Save & Serve Humanity",
+    title: "PDFManipulator",
     description:
-      "Save and Serve Humanity is a real organization working in Pakistan providing providing free healthcare services to underserved communities across Pakistan",
-    image: SSH,
-    alt: "save-and-serve-humanity-img",
-    tech: "Wordpress, Elementor",
-    link: "https://sshpk.org/",
+      "A powerful PDF utility web app capable of merging, splitting, and manipulating PDF files through a fast and intuitive user experience.",
+    image: PDFManipulator,
+    alt: "pdfmanipulator-project",
+    tech: "React, TypeScript, Tailwind",
+    link: "https://pdf-manipulator-shalom.vercel.app/",
   },
 ];
 
