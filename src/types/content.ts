@@ -1,8 +1,7 @@
 export interface TechStackItem {
   title: string;
   description: string;
-  logo: string;
-  alt: string;
+  accent: string;
 }
 
 export interface WorkItem {

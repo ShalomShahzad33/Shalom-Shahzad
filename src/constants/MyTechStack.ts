@@ -1,37 +1,53 @@
-import ReactLogo from "../assets/images/react-logo.png";
-import TailwindLogo from "../assets/images/tailwindcss-logo.png";
-import GSAPLogo from "../assets/images/gsap-logo.png";
-import WordpressLogo from "../assets/images/wordpress-logo.png";
 import type { TechStackItem } from "../types/content";
 
 const myTechStack: TechStackItem[] = [
   {
     title: "React",
     description:
-      "Builds fast, scalable user interfaces with reusable components and clean state management — perfect for modern web apps.",
-    logo: ReactLogo,
-    alt: "react-logo",
+      "Building fast, component-driven interfaces with scalable architecture and smooth user experiences.",
+    accent: "#61dafb",
   },
   {
-    title: "Tailwind",
+    title: "TypeScript",
     description:
-      "Utility-first styling for responsive, consistent, and pixel-perfect designs without bloated CSS files.",
-    logo: TailwindLogo,
-    alt: "tailwind-logo",
+      "Writing maintainable, type-safe code for large frontend applications with better developer experience.",
+    accent: "#3178c6",
+  },
+  {
+    title: "Tailwind CSS",
+    description:
+      "Crafting responsive and visually refined interfaces with utility-first styling and clean design systems.",
+    accent: "#38bdf8",
   },
   {
     title: "GSAP",
     description:
-      "Creates smooth, high-performance animations that add life to interfaces without sacrificing speed or UX.",
-    logo: GSAPLogo,
-    alt: "gsap-logo",
+      "Creating fluid, high-performance animations that make interfaces feel polished and alive.",
+    accent: "#0ae448",
   },
   {
-    title: "Wordpress",
+    title: "Supabase",
     description:
-      "Delivers flexible, content-managed websites that are easy to update, scale, and maintain for real-world clients.",
-    logo: WordpressLogo,
-    alt: "wordpress-logo",
+      "Handling authentication, databases, and backend services for modern full-stack web applications.",
+    accent: "#3ecf8e",
+  },
+  {
+    title: "TanStack Query",
+    description:
+      "Managing server state, caching, and asynchronous data flows with optimized frontend performance.",
+    accent: "#ff6b6b",
+  },
+  {
+    title: "Zustand",
+    description:
+      "Simple and scalable state management for clean application architecture and predictable UI behavior.",
+    accent: "#a78bfa",
+  },
+  {
+    title: "WordPress",
+    description:
+      "Developing flexible content-driven websites and custom solutions for real-world business needs.",
+    accent: "#21759b",
   },
 ];
 
