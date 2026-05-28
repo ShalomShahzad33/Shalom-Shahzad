@@ -6,46 +6,50 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
+
 gsap.registerPlugin(SplitText);
 
 const Hero = () => {
-  const LogoSection = useRef(null);
-  const Title = useRef(null);
-  const HeroPara = useRef(null);
-  const Buttons = useRef(null);
+  const logoSection = useRef<HTMLDivElement>(null);
+  const title = useRef<HTMLHeadingElement>(null);
+  const heroPara = useRef<HTMLParagraphElement>(null);
+  const buttons = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
-    const HeroTitle = new SplitText(Title.current, { type: "words" });
+    if (!title.current) return;
 
-    const HeroTl = gsap.timeline();
+    const heroTitle = new SplitText(title.current, { type: "words" });
 
-    HeroTl.from(HeroTitle.words, {
-      y: 150,
-      duration: 0.75,
-      stagger: 0.1,
-      ease: "expo.out",
-    })
-      .from(HeroPara.current, {
+    const heroTl = gsap.timeline();
+
+    heroTl
+      .from(heroTitle.words, {
+        y: 150,
+        duration: 0.75,
+        stagger: 0.1,
+        ease: "expo.out",
+      })
+      .from(heroPara.current, {
         y: 50,
         opacity: 0,
         duration: 0.5,
         ease: "expo.out",
       })
-      .from(Buttons.current, {
+      .from(buttons.current, {
         y: 50,
         opacity: 0,
         duration: 0.5,
         ease: "power2.inOut",
       })
-      .from(LogoSection.current, {
+      .from(logoSection.current, {
         opacity: 0,
         duration: 0.5,
         ease: "none",
       });
 
     return () => {
-      HeroTitle.revert();
-      HeroTl.kill();
+      heroTitle.revert();
+      heroTl.kill();
     };
   });
 
@@ -53,19 +57,19 @@ const Hero = () => {
     <section className="text-white flex flex-col text-center gap-5 justify-center items-center h-dvh w-vw bg-linear-to-tr from-slate-950 via-indigo-950 to-blue-950 md:gap-9">
       <h1
         className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl relative overflow-hidden"
-        ref={Title}
+        ref={title}
       >
         Hi, I am&nbsp;
         <span className="font-bold text-blue-700 mix-blend-color-dodge block sm:inline text-6xl md:text-7xl lg:text-8xl">
           Shalom Shahzad
         </span>
       </h1>
-      <p className="md:text-2xl px-6" ref={HeroPara}>
+      <p className="md:text-2xl px-6" ref={heroPara}>
         I build fast, animated React interfaces using{" "}
         <span className="text-blue-500">Tailwind</span> and{" "}
         <span className="text-[#0ae448]">GSAP</span>
       </p>
-      <div ref={Buttons} className="flex gap-6">
+      <div ref={buttons} className="flex gap-6">
         <button
           aria-label="See my Work"
           className="bg-white text-blue-700 px-4 py-2 border hover:cursor-pointer hover:bg-transparent hover:text-white hover:border transition-all text-center focus:bg-transparent focus:text-white"
@@ -80,7 +84,7 @@ const Hero = () => {
         </button>
       </div>
 
-      <div ref={LogoSection}>
+      <div ref={logoSection}>
         <img
           src={ReactLogo}
           alt="react-logo"

@@ -1,8 +1,9 @@
 import NOXSTEP from "../assets/images/NOXSTEP.png";
 import SSH from "../assets/images/SSH.png";
 import POKELIB from "../assets/images/Pokelib.png";
+import type { WorkItem } from "../types/content";
 
-const myWork = [
+const myWork: WorkItem[] = [
   {
     title: "NOXSTEP",
     description:

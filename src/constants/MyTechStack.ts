@@ -2,8 +2,9 @@ import ReactLogo from "../assets/images/react-logo.png";
 import TailwindLogo from "../assets/images/tailwindcss-logo.png";
 import GSAPLogo from "../assets/images/gsap-logo.png";
 import WordpressLogo from "../assets/images/wordpress-logo.png";
+import type { TechStackItem } from "../types/content";
 
-const myTechStack = [
+const myTechStack: TechStackItem[] = [
   {
     title: "React",
     description:

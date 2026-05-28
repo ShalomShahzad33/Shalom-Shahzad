@@ -10,13 +10,22 @@ const Footer = () => {
         <a
           href="https://www.upwork.com/freelancers/~01f03c187b4fadece0"
           target="_blank"
+          rel="noreferrer"
         >
           Upwork
         </a>
-        <a href="https://www.fiverr.com/s/5rZLpmE" target="_blank">
+        <a
+          href="https://www.fiverr.com/s/5rZLpmE"
+          target="_blank"
+          rel="noreferrer"
+        >
           Fiverr
         </a>
-        <a href="https://github.com/ShalomShahzad33" target="_blank">
+        <a
+          href="https://github.com/ShalomShahzad33"
+          target="_blank"
+          rel="noreferrer"
+        >
           Github
         </a>
       </p>
