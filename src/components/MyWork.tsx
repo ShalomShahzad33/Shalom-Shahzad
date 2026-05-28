@@ -15,7 +15,7 @@ const MyWork = () => {
 
   const eyebrowRef = useRef<HTMLParagraphElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const cardsRef = useRef<(HTMLElement | null)[]>([]);
 
   useGSAP(
     () => {
@@ -132,7 +132,7 @@ const MyWork = () => {
                 <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.20),transparent_35%,rgba(255,255,255,0.10))]" />
 
                 <div className="relative flex flex-col overflow-hidden rounded-[2.5rem] bg-slate-950/95 backdrop-blur-2xl lg:flex-row">
-                  <div className="relative w-full lg:w-[58%] h-[260px] sm:h-[320px] lg:h-[360px] overflow-hidden">
+                  <div className="relative w-full lg:w-[58%] h-65 sm:h-80 lg:h-90 overflow-hidden">
                     {/* Overlay */}
                     <div className="absolute inset-0 z-10 bg-linear-to-tr from-slate-950/60 via-transparent to-transparent opacity-70 transition duration-500 group-hover:opacity-40" />
 
